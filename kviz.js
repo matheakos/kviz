@@ -37,9 +37,8 @@ function otodikfeladat(){
     film = otodik;
     console.log(film);
 }
-
-var pontszam = 0;
 function ellenorzogomb(){
+    var pontszam = 0;
     if(radiogomb == "Naughty Dog"){
         pontszam += 1;
     }
