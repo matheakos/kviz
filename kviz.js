@@ -56,4 +56,7 @@ function ellenorzogomb(){
         pontszam += 1;
     }
     console.log(pontszam);
+
+    var valaszok = document.getElementById("valaszok").innerHTML = "<h4>Helyes válaszok:</h4><p>1.: Naughty Dog</p><p>2.: Socket AM4</p><p>3.: A</p><p>4.: Mátra</p><p>5.: Guy Ritchie</p>"
+    var elertpontszam = document.getElementById("elertpontszam").innerText = "Elért pontszám: " + pontszam;
 }
