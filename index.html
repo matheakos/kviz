@@ -4,43 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Kvíz</title>
 </head>
 <body>
     <div class="container">
         <h5>Kvíz: mindjárt meglesz a neve</h5>
+        <p>1. Melyik játék kiadó fejlesztette a Crash Bandicoot első három részét?</p>
         <div class="row">
-            <p>1. Melyik játék kiadó fejlesztette a Crash Bandicoot első három részét?</p>
             <form action="">
                 <p>
-                    <input type="radio" name="naughty">
-                    <label for="name">Naughty Dog</label>
+                    <input type="radio" id="naughty" name="radiogomb">
+                    <label for="naughty">Naughty Dog</label>
                 </p>
                 <p>
-                    <input type="radio" name="traveller">
+                    <input type="radio" id="traveller" name="radiogomb">
                     <label for="traveller">Traveller's Tales</label>
                 </p>
                 <p>
-                    <input type="radio" name="radical">
+                    <input type="radio" id="radical" name="radiogomb">
                     <label for="radical">Radical Entertainment</label>
                 </p>
                 <p>
-                    <input type="radio" name="vicarious">
+                    <input type="radio" id="vicarious" name="radiogomb">
                     <label for="vicarious">Vicarious Visions</label>
                 </p>
             </form>
         </div>
+        <p>2. Válassza ki azt a foglalatot, amely AMD típusú processzort támogat.</p>
         <div class="row">
-            <p>2. Válassza ki azt a foglalatot, amely AMD típusú processzort támogat.</p>
             <form action="">
                 <select name="" id="">
-                    <option value="LGA 1150"></option>
-                    <option value="LGA 1200"></option>
-                    <option value="Socket AM4"></option>
-                    <option value="LGA 1151"></option>
+                    <option value="LGA 1150">LGA 1150</option>
+                    <option value="LGA 1200">LGA 1200</option>
+                    <option value="Socket AM4">Socket AM4</option>
+                    <option value="LGA 1151">LGA 1151</option>
                 </select>
             </form>
         </div>
+        <p>3. Válassza ki azokat a városokat, amely Komárom-Esztergom megyéhez tartozik!</p>
+            <form action="">
+                <div class="row">
+                    <div class="col-3">
+                            <p>
+                                <input type="checkbox" id="esztergom" name="checkboxgomb">
+                                <label for="esztergom">Esztergom</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="kisber" name="checkboxgomb">
+                                <label for="kisber">Kisbér</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="miskolc" name="checkboxgomb">
+                                <label for="miskolc">Miskolc</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="tatabanya" name="checkboxgomb">
+                                <label for="tatabanya">Tatabánya</label>
+                            </p>
+                    </div>
+                    <div class="col-3">
+                            <p>
+                                <input type="checkbox" id="hatvan" name="checkboxgomb">
+                                <label for="hatvan">Hatvan</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="sopron" name="checkboxgomb">
+                                <label for="sopron">Sopron</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="tata" name="checkboxgomb">
+                                <label for="tata">Tata</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="siofok" name="checkboxgomb">
+                                <label for="siofok">Siófok</label>
+                            </p>
+                    </div>
+                </div>
+            </form>
     </div>
 </body>
 </html>
