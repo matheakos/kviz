@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Kvíz</title>
+    <script src="kviz.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,19 +15,19 @@
         <div class="row ml-5">
             <form action="">
                 <p>
-                    <input type="radio" id="naughty" name="radiogomb">
+                    <input type="radio" id="naughty" value="Naughty Dog" name="radiogomb" oninput="elsofeladat()">
                     <label for="naughty">Naughty Dog</label>
                 </p>
                 <p>
-                    <input type="radio" id="traveller" name="radiogomb">
+                    <input type="radio" id="traveller" value="Traveller's Tales" name="radiogomb" oninput="elsofeladat()">
                     <label for="traveller">Traveller's Tales</label>
                 </p>
                 <p>
-                    <input type="radio" id="radical" name="radiogomb">
+                    <input type="radio" id="radical" value="Radical Entertainment" name="radiogomb" oninput="elsofeladat()">
                     <label for="radical">Radical Entertainment</label>
                 </p>
                 <p>
-                    <input type="radio" id="vicarious" name="radiogomb">
+                    <input type="radio" id="vicarious" value="Vicarious Visions" name="radiogomb" oninput="elsofeladat()">
                     <label for="vicarious">Vicarious Visions</label>
                 </p>
             </form>
@@ -34,7 +35,7 @@
         <h5>2. Válassza ki azt a foglalatot, amely AMD típusú processzort támogat.</h5>
         <div class="row ml-5">
             <form action="">
-                <select name="" id="">
+                <select name="" id="masodik" oninput="masodikfeladat()">
                     <option value="LGA 1150">LGA 1150</option>
                     <option value="LGA 1200">LGA 1200</option>
                     <option value="Socket AM4">Socket AM4</option>
@@ -86,13 +87,13 @@
             <h5>4. Írja be, melyik hegységrészben található a <strong>Kékes</strong>!</h5>
             <form action="">
                 <div class="row ml-5 my-3">
-                    <input type="text" id="negyedik">
+                    <input type="text" id="negyedik" oninput="negyedikfeladat()">
                 </div>
             </form>
             <h5>5. Ki írta az Úriemberek című film történetét?</h5>
             <form action="">
                 <div class="row ml-5 my-3">
-                    <input type="text">
+                    <input type="text" id="otodik" oninput="otodikfeladat()">
                 </div>
             </form>
             <hr>
